@@ -103,5 +103,5 @@ See e.g. the many versions of [wikitext](https://huggingface.co/datasets/wikitex
 
 
 # Thanks!
-* Huge thanks for many folks affiliated with the People Space and Algorithms Research Group at Northwestern and GroupLens at the University of Minnesota who helped with finding an initial set of examples. In particular, Jack Bandy and Isaac Johnson helped a ton!
-* If you'd like to be listed here, happy to add you.
+* Huge thanks to many folks affiliated with the People Space and Algorithms Research Group at Northwestern and GroupLens at the University of Minnesota who helped with finding an initial set of examples. In particular, Jack Bandy, Isaac Johnson, Hanlin Li, and Brent Hecht provided many of the examples included in the initial draft.
+* If you'd like to be listed here, happy to add you!
