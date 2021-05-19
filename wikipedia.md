@@ -1,0 +1,101 @@
+
+
+This is a roughly structured list of links to
+examples (research papers, news stories, etc.) of cases in which
+Wikipedia is a dependency for an intelligent technology (e.g. search, AI assistants, language processing).
+
+Currently, examples are broadly split up into two categories: cases in which an intelligent technology serves Wikipedia content like a meal (e.g. search engine returns Wikipedia link) and cases in which an intelligent technology uses Wikipedia as some kind of training data (e.g. a language model "reads" all of Wikipedia to learn how sentences are structured).
+
+The current version is a work in progress and incomplete, but we'd love your suggestions and contributions!
+
+We're also very open to move this somewhere outside GitHub (e.g. to a Wiki talk page or another platform that's more amenable to low cost collaborative editing) if there is interest in doing so.
+
+# Wikipedia Content is Used Directly by Intelligent Technology ("Wikipedia Articles as a Meal to be Served")
+
+## Wikipedia links to provide context
+* "YouTube Will Link Directly to Wikipedia to Fight Conspiracy Theories" - Louise Matsakis in Wired, 2018. [Link](https://www.wired.com/story/youtube-will-link-directly-to-wikipedia-to-fight-conspiracies/)
+    - Summary: YouTube will use Wikipedia links to provide context on "conspiracy theory videos".
+    - Relevant Quote: "Here’s how it will work: If you search and click on a conspiracy theory video about, say, chemtrails, YouTube will now link to a Wikipedia page that debunks the hoax alongside the video."
+* "The Effects of an Informational Intervention on Attention to Anti-Vaccination Content on YouTube" - Sangyeon Kim et al. ICWSM, 2020.. [Link](https://ojs.aaai.org//index.php/ICWSM/article/view/7364)
+    - Summary: A research study of the effects of YouTube's intervention.
+    - Quote: "We find that this informational intervention reduced traffic to the affected videos, both overall, and in comparison to a carefully-matched set of control videos that did not receive the informational modification."
+* "Facebook outsources its fake news problem to Wikipedia—and an army of human moderators" - Kerry Flynn in Mashable, 2017. [Link](https://mashable.com/2017/10/05/facebook-wikipedia-context-articles-news-feed/)
+    - Summary: Facebook is also using Wikipedia links to provde context about entities who publish news content.
+    - Quote: "Now, when Facebook users see articles on News Feed, they can click on a little "i" button and see the Wikipedia description of the publisher."
+* "Facebook Adds Wikipedia Knowledge Boxes in Search Results" - Andrew Hutchinson in SocialMediaToday, 2020. [Link](https://www.socialmediatoday.com/news/facebook-adds-wikipedia-knowledge-boxes-in-search-results/579510/)
+    - Facebook adds a search results-esque "Knowledge Panel", drawing on Wikipedia data.
+    - Quote: "The addition is very similar to Google's Knowledge Panels, which it launched back in 2012, and are also largely populated by Wikipedia info. Knowledge Panel listings can serve various purposes, including providing contextual insight, keeping users on platform for longer, and - for those that have them - adding more authority to your presence."
+
+## Wikipedia links answer search queries
+* "Auditing the Information Quality of News-Related Queries on the Alexa Voice Assistant." - Henry Kudzanai Dambanemuya and Nicholas Diakopoulos in CSCW. 2021.  [Link](https://doi.org/10.1145/3449157)
+    - Summary: Auditing Queries to Alexa.
+    - Quote: “Of all the understood responses, Wikipedia is the most prevalent individual information source, providing 18.6% of the responses. It is plausible to conclude that the reliability of these responses is only as reliable as Wikipedia”
+
+* "Auditing the Personalization and Composition of Politically-Related Search Engine Results Pages" - Ronald E. Robertson, David Lazer, and Christo Wilson in The Web Conference (WWW), 2018.[Link](https://doi.org/10.1145/3178876.3186143)
+    - Summary: An auditing of political search results.
+    - Quote: "In terms of URL domains, we found that knowledge components typically do not feature a URL (Table 2), and when they do it is oftena link to Wikipedia, confirming a finding from a previous audit"
+    - Note: Effect size is quite similar to Vincent and Hecht 2021, below.
+
+* "A Deeper Investigation of the Importance of Wikipedia Links to the Success of Search Engines" - Nicholas Vincent and Brent Hecht in CSCW, 2021. [Link](http://www.nickmvincent.com/static/wikiserp_cscw.pdf)
+    - "Our findings reinforce the complementary notions that (1) Wikipedia content and research has major impact outside of the Wikipedia domain and (2) powerful technologies like search engines are highly reliant on free content created by volunteers."
+
+## Wikipedia is everywhere on the web!
+Examples of studies that study how Wikipedia text is re-used and how Wikipedia links add value to other online platforms.
+* "Examining Wikipedia with a broader lens: Quantifying the value of Wikipedia's relationships with other large-scale online communities" - Nicholas Vincent, Isaac Johnson, and Brent Hecht in CHI 2018. [Link](https://doi.org/10.1145/3173574.3174140)
+    - This paper extends this recent research beyond search engines to examine Wikipedia's relationships with large-scale online communities, Stack Overflow and Reddit in particular. Wikipedia provides substantial value to both communities, with Wikipedia content increasing visitation, engagement, and revenue..."
+* "Wikipedia Text Reuse: Within and Without" - Milad Alshomary et al. in ECIR 2019. [Link](https://doi.org/10.1007/978-3-030-15712-8_49)
+    - "We further report on a pilot analysis of the 100 million reuse cases inside, and the 1.6 million reuse cases outside Wikipedia that we discovered. Text reuse inside Wikipedia gives rise to new tasks such as article template induction, fixing quality flaws, or complementing Wikipedia’s ontology. Text reuse outside Wikipedia yields a tangible metric for the emerging field of quantifying Wikipedia’s influence on the web."
+
+## Wikipedia links answer questions
+Question answering involves aspects of both document retrieval ("serve" Wikipedia content) and machine "understanding" of text (e.g. the ability to identifying the portion of a document that answers a question). As such, these systems share similarities with both search engines and language models.
+
+* "Reading Wikipedia to Answer Open-Domain Questions" - Danqi Chen et al. in ACL 2017. [Link](https://arxiv.org/abs/1704.00051)
+    - "Our approach combines a search component based on bigram hashing and TF-IDF matching with a multi-layer recurrent neural network model trained to detect answers in Wikipedia paragraphs."
+* RikiNet: Reading Wikipedia Pages for Natural Question Answering - Dayiheng Liu et al. in ACL 2020. [Link](https://www.aclweb.org/anthology/2020.acl-main.604/)
+    - "In this paper, we introduce a new model, called RikiNet, which reads Wikipedia pages for natural question answering... To our best knowledge, it is the first single model that outperforms the single human performance."
+
+
+# Wikipedia as Training Data ("Wikipedia as a Recipe")
+
+## Wikipedia provides context for training data labelers
+* "ImageNet Large Scale Visual Recognition Challenge" - Russakoksky et al. in International Journal of Computer Vision, 2015. [Link](https://doi.org/10.1007/s11263-015-0816-y)
+    - Quote: "To collect a highly accurate dataset, we rely on humans to verify each candidate image collected in the previous step for a given synset. This is achieved by using Amazon Mechanical Turk (AMT), an online platform on which one can put up tasks for users for a monetary reward. With a global user base, AMT is particularly suitable for large scale labeling. In each of our labeling tasks, we present the users with a set of candidate images and the definition of the target synset (including a link to Wikipedia). We then ask the users to verify whether each image contains objects of the synset. We encourage users to select images regardless of occlusions, number of objects and clutter in the scene to ensure diversity."
+    - Additional note from Nick Vincent: This one really surprised me. People have talked for a while about the influence of Wikipedia on NLP, but I had no idea Wikipedia may have "leaked" into computer vision in such a big way. Does anyone know of other similar examples?
+
+## Wikipedia in the training pipeline
+* "Improving Medical Code Prediction from Clinical Text via Incorporating Online Knowledge Sources" - Tian Bai and Slobodan Vucetic in The Web Conference (WWW), 2019. [Link](https://doi.org/10.1145/3308558.3313485)
+    - Wikipedia helps assign medical codes to clinical notes.
+    - "The main idea of KSI is to calculate matching scores between a clinical note and disease related Wikipedia documents, and combine the scores with output of the baseline model."
+
+## Wikipedia text as training data
+* "Language Models are Few-Shot Learners" - Tom B. Brown et al in arXiv, 2020. [Link](https://arxiv.org/abs/2005.14165)
+    - Summary: Wikipedia is one of the "high-quality" text data sources for training the massively high-profile language model "GPT-3".
+    - Quote: "we also added known high-quality reference corpora to the training mix to augment CommonCrawl and increase its diversity... we added several curated high-quality datasets, including an expanded version of the WebText dataset... two internet-based books corpora... and English-language Wikipedia.
+
+* "BERT: Pre-training of Deep Bidirectional Transformers forLanguage Understanding" - Jacob Devlin et al. in NAACL 2019. [Link](https://www.aclweb.org/anthology/N19-1423/)
+    - "for the pre-training corpus we use the BooksCorpus (800M  words) (Zhu  et  al.,2015) and English Wikipedia (2,500M  words)"
+    - Note the enormous influence of this paper, with over 19,000 citatons as of May 2021.
+
+* "Censorship of Online Encyclopedias: Implications for NLP Models" - Eddie Yang and Margaret E. Roberts in ACM FAccT, 2021. [Link](https://doi.org/10.1145/3442188.3445916)
+    - Summary: Examines in the impact of Wikipedia on NLP models by comparing models trained with and without Wikipedia.
+    - Quote: " We show that word embeddings trained on Baidu Baike, an online Chinese encyclopedia, have very different associations between adjectives and a range of concepts about democracy, freedom, collective action, equality, and people and historical events in China than its regularly blocked but uncensored counterpart - Chinese language Wikipedia"
+
+* "Microsoft Word is getting politically correct" - Mark Sullivan in Fast Company, 2019. [Link](https://www.fastcompany.com/90346224/microsoft-word-is-getting-politically-correct)
+    - Summary: Microsoft Word adds an AI feature to help with word selection.
+    - Quote: "For the various new checks, Microsoft assembled a team of linguists and other experts to anticipate the poor word choices people might make, and assemble lists of terms that would work better, Office Intelligence product manager Malavika Rewari tells me. The AI’s training data also includes Wikipedia pages, which are constantly being updated and corrected."
+
+
+## TODO: Wikipedia, Wikidata and Knowledge Graphs
+Wikipedia and the related Wikidata platform have been crucical to research on Knowledge Graphs. 
+
+Note that Wikidata might call for its own `.md` file.
+
+## TODO: Wikipedia and Geographic Computing Systems
+
+## TODO: Widely used Wikipedia-based datasets
+See e.g. the many versions of [wikitext](https://huggingface.co/datasets/wikitext).
+
+
+# Thanks!
+* Huge thanks for many folks affiliated with the People Space and Algorithms Research Group at Northwestern and GroupLens at the University of Minnesota who helped with finding an initial set of examples. In particular, Jack Bandy and Isaac Johnson helped a ton!
+* If you'd like to be listed here, happy to add you.
