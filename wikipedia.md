@@ -45,7 +45,7 @@ Examples of studies that study how Wikipedia text is re-used and how Wikipedia l
 * "Wikipedia Text Reuse: Within and Without" - Milad Alshomary et al. in ECIR 2019. [Link](https://doi.org/10.1007/978-3-030-15712-8_49)
     - Quote: "We further report on a pilot analysis of the 100 million reuse cases inside, and the 1.6 million reuse cases outside Wikipedia that we discovered. Text reuse inside Wikipedia gives rise to new tasks such as article template induction, fixing quality flaws, or complementing Wikipedia’s ontology. Text reuse outside Wikipedia yields a tangible metric for the emerging field of quantifying Wikipedia’s influence on the web."
 
-## Wikipedia answer questions
+## Wikipedia articles as documents that answer questions
 Question answering involves aspects of both document retrieval ("serve" Wikipedia content) and machine "understanding" of text (e.g. the ability to identifying the portion of a document that answers a question). As such, these systems share similarities with both search engines and language models.
 
 * "Reading Wikipedia to Answer Open-Domain Questions" - Danqi Chen et al. in ACL 2017. [Link](https://arxiv.org/abs/1704.00051)
@@ -57,6 +57,9 @@ Question answering involves aspects of both document retrieval ("serve" Wikipedi
 # Wikipedia as Training Data ("Wikipedia as a Recipe")
 
 ## Wikipedia text as training data
+* "KELM: Integrating Knowledge Graphs with Language Model Pre-training Corpora" - Siamak Shakeri et al. in NAACL 2021. https://ai.googleblog.com/2021/05/kelm-integrating-knowledge-graphs-with.html
+    - Uses " a large training corpus of heuristically aligned Wikipedia text and Wikidata KG triples"
+
 * "Language Models are Few-Shot Learners" - Tom B. Brown et al in arXiv, 2020. [Link](https://arxiv.org/abs/2005.14165)
     - Summary: Wikipedia is one of the "high-quality" text data sources for training the massively high-profile language model "GPT-3".
     - Quote: "we also added known high-quality reference corpora to the training mix to augment CommonCrawl and increase its diversity... we added several curated high-quality datasets, including an expanded version of the WebText dataset... two internet-based books corpora... and English-language Wikipedia.
